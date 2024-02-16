@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.58 33.4">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+        opacity: .6;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #6e605e;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Livello_1-2" data-name="Livello 1">
+    <g id="glass_broken" data-name="glass broken">
+      <g id="Livello_1-3" data-name="Livello 1">
+        <g id="water_glass" data-name="water glass">
+          <path id="Tracciato_9" data-name="Tracciato 9" class="cls-1" d="M1.47,1.3h22.94l-1.51,17.41-3.23,13.45H6.04l-3.91-14.28L1.47,1.3Z"/>
+          <path id="Tracciato_10" data-name="Tracciato 10" class="cls-3" d="M24.52,0H1.06C.48,0,0,.46,0,1.05c0,0,0,0,0,.01.07,10.71,1.67,21.36,4.74,31.62.15.43.55.72,1,.72h14.08c.45,0,.85-.29,1-.72,3.09-10.26,4.69-20.91,4.76-31.62C25.58.48,25.11,0,24.53,0c0,0,0,0-.01,0ZM19.06,31.28H6.54C3.78,21.8,2.3,11.99,2.13,2.12h21.33c-.17,9.88-1.65,19.68-4.41,29.17ZM17.96,27.99c.19.05.38-.06.43-.25,0,0,0,0,0,0,1.72-6.68,2.82-13.51,3.28-20.4,0-.2-.14-.36-.33-.38-.19,0-.36.14-.38.34-.46,6.85-1.55,13.63-3.26,20.28-.05.19.06.38.25.43,0,0,0,0,0,0h0Z"/>
+        </g>
+      </g>
+      <g id="Livello_1-2" data-name="Livello 1-2">
+        <path id="Tracciato_11" data-name="Tracciato 11" class="cls-2" d="M5.51,0l-1.15,4.31,6.72,4.84-1.72,6.4,5.23,3.98,1.72,7.26,1.25-8.67-4.45-3.44,2.18-5.31L10.06,1.82,10.55,0h-5.04Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

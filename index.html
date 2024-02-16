@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, , user-scalable=0"
+    />
+    <title>Spacca vetri</title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <script defer src="p5.js"></script>
+    <script defer src="addons/p5.sound.js"></script>
+
+    <!--Google Fonts: Work Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <p>Più urli, più bicchieri rompi.</p>
+    </header>
+
+    <main>
+      <section id="vetrina" class="scaffale">
+        <div class="mensola">
+          <div id="mensolaDX" class="mensola vertical"></div>
+          <div id="mensolaSX" class="mensola vertical"></div>
+        </div>
+
+        <div id="box_water">
+          <div class="box flex-center">
+            <div id="glass_water" class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+          </div>
+          <div class="mensola"></div>
+        </div>
+
+        <div id="box1" class="box flex-center">
+          <h1>Spacca</h1>
+          <div class="glass_ctr">
+            <div class="glass"></div>
+            <div class="vetro"></div>
+          </div>
+        </div>
+        <div class="mensola"></div>
+
+        <div id="box2" class="box flex-center">
+          <div class="glass_ctr">
+            <div class="glass"></div>
+            <div class="vetro"></div>
+          </div>
+          <div class="glass_ctr">
+            <div class="glass"></div>
+            <div class="vetro"></div>
+          </div>
+          <span class="flex-center">
+            <img
+              id="broken_glass"
+              src="img/broken-glass.svg"
+              alt="broken-glass"
+            />
+            <h2>etri</h2>
+          </span>
+        </div>
+        <div class="mensola"></div>
+
+        <div>
+          <div class="box flex-center">
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+
+            <div class="glass_ctr">
+              <div class="glass"></div>
+              <div class="vetro"></div>
+            </div>
+          </div>
+          <div class="mensola"></div>
+        </div>
+      </section>
+
+      <section>
+        <button id="playButton" type="button">Play now</button>
+      </section>
+    </main>
+
+    <footer class="flex-center">
+      <img class="cucina" src="img/cucina.svg" alt="cucina-cartoon" />
+    </footer>
+  </body>
+</html>

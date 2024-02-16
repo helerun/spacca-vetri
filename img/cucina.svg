@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 328">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #6e605e;
+      }
+
+      .cls-2 {
+        fill: #5d5d5d;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #6e605e;
+      }
+
+      .cls-4 {
+        fill: #cdcdcd;
+      }
+
+      .cls-5 {
+        fill: #8a8a8a;
+      }
+
+      .cls-6 {
+        fill: #907874;
+      }
+
+      .cls-7 {
+        fill: #f5f6f8;
+      }
+    </style>
+  </defs>
+  <g id="spacca_vetri" data-name="spacca vetri">
+    <g id="cucina">
+      <rect id="Rettangolo_15" data-name="Rettangolo 15" class="cls-6" x="12" y="12" width="654" height="316"/>
+      <g id="bancone">
+        <rect class="cls-3" width="930" height="25" rx="5" ry="5"/>
+        <rect class="cls-1" x=".5" y=".5" width="929" height="24" rx="4.5" ry="4.5"/>
+      </g>
+      <rect id="sfondo" class="cls-3" x="276" y="37" width="183" height="268" rx="5" ry="5"/>
+      <rect id="sfondo-2" class="cls-3" x="471" y="37" width="183" height="268" rx="5" ry="5"/>
+      <rect id="Rettangolo_16" data-name="Rettangolo 16" class="cls-7" x="429" y="97" width="14" height="60" rx="2" ry="2"/>
+      <rect id="Rettangolo_17" data-name="Rettangolo 17" class="cls-7" x="487" y="97" width="14" height="60" rx="2" ry="2"/>
+      <rect id="Rettangolo_18" data-name="Rettangolo 18" class="cls-4" x="666" y="25" width="252" height="303"/>
+      <rect id="Rettangolo_19" data-name="Rettangolo 19" class="cls-5" x="678" y="37" width="228" height="49" rx="5" ry="5"/>
+      <circle id="Ellisse_1" data-name="Ellisse 1" class="cls-2" cx="709" cy="62" r="11"/>
+      <circle id="Ellisse_2" data-name="Ellisse 2" class="cls-2" cx="741" cy="62" r="11"/>
+      <circle id="Ellisse_3" data-name="Ellisse 3" class="cls-2" cx="773" cy="62" r="11"/>
+      <rect id="Rettangolo_20" data-name="Rettangolo 20" class="cls-5" x="678" y="98" width="228" height="207" rx="5" ry="5"/>
+      <path id="Tracciato_12" data-name="Tracciato 12" class="cls-2" d="M710.56,130s8.79,12.27,27.64,18.44c13.18,4.32,33.53,6.77,52.13,6.77,19.85,0,42.53-1.93,57.49-6.77,18.02-5.82,25.7-18.44,25.7-18.44h12.48v143.79c.12,2.88-2.12,5.32-5,5.45h-178c-2.88-.13-5.12-2.56-5-5.45v-143.79c4.18.21,8.38.21,12.56,0Z"/>
+      <rect id="Rettangolo_21" data-name="Rettangolo 21" class="cls-2" x="733" y="126" width="119" height="8" rx="3" ry="3"/>
+      <rect id="Rettangolo_22" data-name="Rettangolo 22" class="cls-2" x="826" y="54" width="60" height="15" rx="3" ry="3"/>
+      <rect id="sfondo-3" class="cls-3" x="24" y="37" width="240" height="81" rx="5" ry="5"/>
+      <rect id="sfondo-4" class="cls-3" x="24" y="224" width="240" height="81" rx="5" ry="5"/>
+      <rect id="sfondo-5" class="cls-3" x="24" y="131" width="240" height="81" rx="5" ry="5"/>
+      <rect id="Rettangolo_23" data-name="Rettangolo 23" class="cls-7" x="109" y="53" width="70" height="14" rx="2" ry="2"/>
+      <rect id="Rettangolo_24" data-name="Rettangolo 24" class="cls-7" x="109" y="147" width="70" height="14" rx="2" ry="2"/>
+      <rect id="Rettangolo_25" data-name="Rettangolo 25" class="cls-7" x="109" y="240" width="70" height="14" rx="2" ry="2"/>
+    </g>
+  </g>
+</svg>
