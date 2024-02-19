@@ -52,7 +52,7 @@ function duplicateBox() {
   const vetrina = document.getElementById("vetrina");
   vetrina.appendChild(boxWater1);
   vetrina.appendChild(boxWater2);
-  
+
   // Allungo le mensole verticali
   let mensolaDX = document.getElementById("mensolaDX");
   mensolaDX.style.width = "444px";
@@ -66,7 +66,6 @@ let mic, analyzer, level;
 function setup() {
   mic = new p5.AudioIn();
   mic.start();
-  
 }
 function draw() {
   if (gameStarted) {
@@ -91,6 +90,3 @@ function draw() {
     }
   }
 }
-
-
-
