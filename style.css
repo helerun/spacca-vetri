@@ -102,7 +102,6 @@ h2 {
   transform: rotate(90deg);
   transform-origin: left;
   z-index: 1;
-  transition: width 1s ease;
 }
 
 .vertical:last-child {
@@ -124,8 +123,7 @@ h2 {
   width: 35px;
   height: 43px;
   background-color: rgb(255, 255, 255);
-  position: absolute;
-  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+  position: relative;
   clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
 }
 
@@ -133,14 +131,40 @@ h2 {
   width: 28px;
   height: 38px;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
   clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
-  position: relative;
+  position: absolute;
   background: linear-gradient(
     90deg,
     rgba(150, 150, 150, 0.3),
     rgba(150, 150, 150, 0.8)
   );
+}
+
+.crack {
+  width: 35px;
+  height: 20px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  clip-path: polygon(20% 0%, 40% 100%, 65% 100%, 15% 100%);
+  transform: rotate(90deg);
+  display: none;
+}
+
+.crack:last-child {
+  clip-path: polygon(20% 0%, 40% 100%, 80% 100%, 100% 150%);
+  transform: rotate(275deg);
+}
+
+.glass_ctr[data-cracks="1"] .crack {
+  display: block;
+}
+
+.glass_ctr[data-cracks="1"] .crack:last-child{
+  display: none;
+}
+
+.glass_ctr[data-cracks="2"] .crack {
+  display: block;
 }
 
 #broken_glass {
@@ -150,7 +174,7 @@ h2 {
 
 /* Play Now */
 
-button {
+#playButton {
   display: inline-block;
   width: 250px;
   height: 70px;
@@ -168,13 +192,6 @@ button {
   cursor: pointer;
   box-shadow: 0 0 20px #00000030;
   white-space: nowrap;
-  transition: transform (0.5s ease, opacity 0.5s ease);
-}
-
-button.clicked {
-  /* Definisci la trasformazione quando il pulsante viene cliccato */
-  transform: translateY(100%);
-  opacity: 0;
 }
 
 /* Footer */
