@@ -52,7 +52,7 @@ function duplicateBox() {
   const vetrina = document.getElementById("vetrina");
   vetrina.appendChild(boxWater1);
   vetrina.appendChild(boxWater2);
-  
+
   // Allungo le mensole verticali
   let mensolaDX = document.getElementById("mensolaDX");
   mensolaDX.style.width = "444px";
@@ -66,7 +66,6 @@ let mic, analyzer, level;
 function setup() {
   mic = new p5.AudioIn();
   mic.start();
-  
 }
 function draw() {
   if (gameStarted) {
@@ -76,40 +75,37 @@ function draw() {
     // console.log(level*100);
     // Seleziona il contenitore del bicchiere
     let glasses = document.getElementsByClassName("glass_ctr");
-    if ((level * 100 > 20) && (level * 100 < 50)) {
-        let num = Math.ceil(Math.random() * glass.length - 1);
-        let crackCount = glass[num].childElementCount;
-        let glass = glasses[num]
+    if (level * 100 > 20 && level * 100 < 50) {
+      let num = Math.ceil(Math.random() * glasses.length - 1);
 
-        console.log(glass)
+      let glass = glasses[num];
 
-        let cracks = parseInt(glass.dataset['cracks'])
+      console.log(glass);
 
-        if (cracks < 2) {
-          glass.dataset.cracks = cracks + 1
-        }
-        // console.log(crackCount);
-        // if (crackCount < 4) {
-        //   // Creo un nuovo elemento div
-        //   const crack = document.createElement("div");
-        
-        //   // Aggiungo la classe .crack al nuovo elemento
-        //   crack.classList.add("crack");
-        
-        //   // Aggiungo la seconda crepa con coordinate e trasformazione differenti
-        //   if (crackCount == 1) {
-        //     crack.style.clipPath = "polygon(20% 0%, 40% 100%, 65% 100%, 15% 100%)";
-        //     crack.style.transform = "rotate(90deg)";
-        //   } else if (crackCount == 2) {
-        //     crack.style.clipPath = "polygon(20% 0%, 40% 100%, 80% 100%, 100% 150%)";
-        //     crack.style.transform = "rotate(275deg)";
-        //   }
-        //   // Aggiungo l'elemento crack al contenitore del bicchiere
-        //   glass[num].appendChild(crack);
-        // }
+      let cracks = parseInt(glass.dataset["cracks"]);
+
+      if (cracks < 2) {
+        glass.dataset.cracks = cracks + 1;
+      }
+      // console.log(crackCount);
+      // if (crackCount < 4) {
+      //   // Creo un nuovo elemento div
+      //   const crack = document.createElement("div");
+
+      //   // Aggiungo la classe .crack al nuovo elemento
+      //   crack.classList.add("crack");
+
+      //   // Aggiungo la seconda crepa con coordinate e trasformazione differenti
+      //   if (crackCount == 1) {
+      //     crack.style.clipPath = "polygon(20% 0%, 40% 100%, 65% 100%, 15% 100%)";
+      //     crack.style.transform = "rotate(90deg)";
+      //   } else if (crackCount == 2) {
+      //     crack.style.clipPath = "polygon(20% 0%, 40% 100%, 80% 100%, 100% 150%)";
+      //     crack.style.transform = "rotate(275deg)";
+      //   }
+      //   // Aggiungo l'elemento crack al contenitore del bicchiere
+      //   glass[num].appendChild(crack);
+      // }
     }
   }
 }
-
-
-
