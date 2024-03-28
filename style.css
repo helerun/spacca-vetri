@@ -60,10 +60,15 @@ h1,
 h2 {
   font-size: var(--fs-56);
   color: var(--primary-color);
+  -webkit-text-stroke: 1px var(--quaternary-color);
+}
+
+h1,
+h2,
+.win-message {
   line-height: 0.7;
   text-transform: uppercase;
   letter-spacing: 2px;
-  -webkit-text-stroke: 1px var(--quaternary-color);
 }
 
 h2 {
@@ -159,7 +164,7 @@ h2 {
   display: block;
 }
 
-.glass_ctr[data-cracks="1"] .crack:last-child{
+.glass_ctr[data-cracks="1"] .crack:last-child {
   display: none;
 }
 
@@ -194,7 +199,36 @@ h2 {
   white-space: nowrap;
 }
 
+/* Win message */
+
+#vetrina {
+  position: relative;
+}
+
+.win-message {
+  font-size: var(--fs-56);
+  color: var(--quaternary-color);
+  background-color: #f4bc8b;
+  border: solid 5px var(--quaternary-color);
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 30px;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
 
 .cucina {
   height: 280px;

@@ -1,9 +1,9 @@
 const playButton = document.getElementById("playButton");
-playButton.onclick = allInstructios;
+playButton.onclick = allInstructions;
 let gameStarted = false;
 
 // Insieme di funzioni attive sul pulsante PLAY NOW
-function allInstructios() {
+function allInstructions() {
   startGame();
   duplicateBox();
 }
@@ -94,25 +94,49 @@ function setup() {
   mic = new p5.AudioIn();
   mic.start();
 }
+
+// Contatore per tener traccia del numero di bicchieri rotti
+let brokenGlassesCount = 0;
+
 function draw() {
   if (gameStarted) {
     getAudioContext().resume();
     //prendo il livello del volume del mic
     level = mic.getLevel();
-    // Seleziona il contenitore del bicchiere
-    let glasses = document.getElementsByClassName("glass_ctr");
+    // Seleziona solo i bicchieri con meno di 2 crepe
+    let glasses = document.querySelectorAll(
+      ".glass_ctr:not([data-cracks='2'])"
+    );
+
     if (level * 100 > 20 && level * 100 < 50) {
       let num = Math.ceil(Math.random() * glasses.length - 1);
 
       let glass = glasses[num];
-
-      console.log(glass);
-
       let cracks = parseInt(glass.dataset["cracks"]);
 
       if (cracks < 2) {
         glass.dataset.cracks = cracks + 1;
+        if (cracks + 1 === 2) {
+          brokenGlassesCount++; // Incrementa il conteggio dei bicchieri rotti
+          // Verifica se tutti i bicchieri sono rotti
+          console.log(glasses.length);
+          console.log(brokenGlassesCount);
+          if (
+            brokenGlassesCount ===
+            document.querySelectorAll(".glass_ctr").length
+          ) {
+            // Tutti i bicchieri sono rotti
+            showWinMessage();
+          }
+        }
       }
     }
   }
+}
+
+function showWinMessage() {
+  const winMessage = document.createElement("h2");
+  winMessage.textContent = "Victory!";
+  winMessage.classList.add("win-message");
+  vetrina.appendChild(winMessage);
 }
